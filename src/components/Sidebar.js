@@ -40,8 +40,8 @@ const Sidebar = ({ children }) => {
       {/* Fixed Sidebar */}
       <div className="w-[311px] bg-[#F76A00] py-10 fixed h-full">
         {/* Logo Section */}
-        <div>
-          <img src={logo} alt="Company logo" className="w-[180px] h-[50px] pl-[25px]" />
+        <div className='flex justify-center'>
+          <img src={logo} alt="Company logo" className="w-[180px] h-[50px]  " />
         </div>
         <hr className="mt-[25px]" />
 

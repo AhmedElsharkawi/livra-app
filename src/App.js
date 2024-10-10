@@ -8,6 +8,8 @@ import Notifications from "./components/Notifications";
 import Packages from "./components/Packages";
 import UserManagement from "./components/UserManagement";
 import Sidebar from "./components/Sidebar";
+import Cars from './components/Cars';
+import Payment from './components/Payment';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/history" element={<History />} />
             <Route path="/userManagement" element={<UserManagement />} />
+            <Route path="/cars" element={<Cars />} />
+            <Route path="/payment" element={<Payment />} />
           </Routes>
         </Sidebar>
       </div>

@@ -11,6 +11,8 @@ import notification from '../assets/Group (3).png';
 import logout from '../assets/Group (5).png';
 import setting from '../assets/Vector (1).png';
 import dropdown from '../assets/Vector (2).png';
+import cars from '../assets/caars.png';
+import paymentIcon from '../assets/payment-icon.png';
 import dot from '../assets/Ellipse 8.png';
 import User from './User';
 
@@ -26,7 +28,9 @@ const Sidebar = ({ children }) => {
     { name: 'Merchants', icon: merchants, route: '/merchants' },
     { name: 'Drivers', icon: drivers, route: '/drivers' },
     { name: 'Packages', icon: packages, route: '/packages' },
+    { name: 'Cars', icon: cars, route: '/cars' },
     { name: 'Locations', icon: location, route: '/locations' },
+    { name: 'Payment', icon: paymentIcon, route: '/payment' },
     { name: 'Notifications', icon: notification, route: '/notifications' },
     { name: 'History', icon: history, route: '/history' },
   ];
@@ -46,9 +50,9 @@ const Sidebar = ({ children }) => {
         <hr className="mt-[25px]" />
 
         {/* Menu Items */}
-        <div className="mt-[80px] pl-[25px]">
+        <div className="mt-[50px] pl-[25px]">
           {menuItems.map((item, index) => (
-            <div key={index} className={`flex items-center gap-6 mx-auto w-full ${index !== 0 ? 'mt-[25px]' : ''}`}>
+            <div key={index} className={`flex items-center gap-6 mx-auto w-full ${index !== 0 ? 'mt-[20px]' : ''}`}>
               <img src={item.icon} alt={`${item.name} icon`} className="w-[20px] h-[20px]" />
               <NavLink to={item.route} activeClassName="active" className="w-full pl-3 font-semibold text-[#FFFFFF]">
                 {item.name}
@@ -57,7 +61,7 @@ const Sidebar = ({ children }) => {
           ))}
 
           {/* Settings and Dropdown */}
-          <div className="flex items-center gap-6 mx-auto w-full mt-[25px]">
+          <div className="flex items-center gap-6 mx-auto w-full mt-[20px]">
             <img src={setting} alt="Settings icon" className="w-[20px] h-[20px]" />
             <span className="w-full pl-3 font-semibold text-[#FFFFFF]">Settings</span>
             <img src={dropdown} alt="Expand menu" className="mr-6 cursor-pointer" onClick={toggleDropMenu} />
@@ -78,10 +82,10 @@ const Sidebar = ({ children }) => {
           )}
         </div>
 
-        <hr className="mt-[45px]" />
+        <hr className="mt-[40px]" />
 
         {/* Logout */}
-        <div className="flex items-center gap-1 mt-[25px] w-20 mx-auto cursor-pointer">
+        <div className="flex items-center gap-1 mt-4   w-20 mx-auto cursor-pointer">
           <img src={logout} alt="Logout icon" className="h-4" />
           <span className="font-bold text-[#FFFFFF]">Log out</span>
         </div>

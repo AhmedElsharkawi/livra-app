@@ -12,10 +12,21 @@
   font-family: "Poppins", sans-serif;
 } */
 
-.active{
-  background-color: white;
+/* .active{
+  background-color: #FF66001C;
   color: #F76A00;
-  border-top-left-radius: 1.5rem; /* 24px */
-  border-bottom-left-radius: 1.5rem; /* 24px */
+  width: full;
+  padding: 5px;
+
+} */
+
+/* .filter-orange {
+  filter: brightness(0) saturate(100%) invert(62%) sepia(85%) saturate(601%) hue-rotate(356deg) brightness(102%) contrast(101%);
+} */
+.inactive-icon {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(4%) saturate(348%) hue-rotate(178deg) brightness(95%) contrast(94%);
 }
 
+.active-icon {
+  filter: brightness(0) saturate(100%) invert(47%) sepia(74%) saturate(1723%) hue-rotate(9deg) brightness(103%) contrast(102%);
+}
